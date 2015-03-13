@@ -1,0 +1,44 @@
+.row-bottom-margin { 
+	margin-bottom:-2px; 
+}
+
+#adimage {
+	padding-top: 15px;
+}
+
+#donate-button {
+	background-color: #FFF04E;
+}
+
+body {
+	font: 'Open Sans', sans-serif;
+	border-top: solid 5px #990000;
+}
+
+#wrapper {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#brand {
+	margin-top: 30px;
+}
+
+.topthree {
+	font-family: 'Sigmar One', cursive;
+}
+
+#bs-example-navbar-collapse-1 {
+	background-color: #336699;
+	margin-top: 10px;
+}
+	#bs-example-navbar-collapse-1 li a {
+		color: black;
+	}
+/*#viewpoints, #blog {
+	list-style-type: none;
+}*/
+
+.vpauth{
+	list-style-type: none;
+}

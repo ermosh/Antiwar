@@ -10,17 +10,21 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
 
   </head>
   <body>
   <div id="wrapper">
 
-    <div id="underad">
+  <div><img id="long-ad" src="images/ad-top.jpg"</div>
 
-    <div class="col-sm-3 text-center" id="brand"><img src="logo-watermark.png" alt="Antiwar.com logo">
-    </div><!-- logo -->
+
+    <div id="underad"> <!-- logo, Highlights, Breaking News, SHS -->
+
+    <div class="col-sm-3 text-center" id="brand"><img src="images/logo-watermark.png" alt="Antiwar.com logo">
+    </div>
 
     <div class="col-sm-3">
       <h4 class="topthree">Highlights</h4>
@@ -70,22 +74,24 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="navigation">
       <ul class="nav nav-pills nav-justified"> <!-- navbar-inverse -->
-        <li><a href="#">Who We Are <span class="sr-only">(current)</span></a></li>
+        <li><a href="#" class="menu-item">Who We Are <span class="sr-only">(current)</span></a></li>
+
         <li role="presentation" class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Authors <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li role="presentation"><a href="#">Justin Raimondo</a></li>
-            <li><a href="#">Pat Buchanan</a></li>
-            <li><a href="#">Lucy Steigerwald</a></li>
-            <li><a href="#">Ramzy Baroud</a></li>
-            <li><a href="#">Ivan Eland</a></li>
-          </ul>
+          <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">Authors <span class="caret"></span></a>
+            <ul class="dropdown-menu inverse-dropdown" role="menu">
+              <li><a href="#">Justin Raimondo</a></li>
+              <li><a href="#">Pat Buchanan</a></li>
+              <li><a href="#">Lucy Steigerwald</a></li>
+              <li><a href="#">Ramzy Baroud</a></li>
+              <li><a href="#">Ivan Eland</a></li>
+            </ul>
         </li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Newsletter</a></li>
-        <li id="donate-button"><a href="antiwar.com/donate">Donate</a>
+
+        <li><a href="#" class="menu-item">Blog</a></li>
+        <li><a href="#" class="menu-item">Shop</a></li>
+        <li><a href="#" class="menu-item">Contact</a></li>
+        <li><a href="#" class="menu-item">Newsletter</a></li>
+        <li id="donate-button" class="menu-item"><a href="antiwar.com/donate">Donate</a>
           <!-- <button type="submit" id="donate-button" class="btn navbar-btn"></button> -->
       </ul>
       
@@ -94,11 +100,11 @@
 </nav> <!-- end of first nav -->
 
 <!-- Second nav -->
-<nav class="navbar">
+<nav class="navbar" id="subnav">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -107,11 +113,11 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="pleasework">
       <ul class="nav nav-pills nav-justified"> <!-- navbar-inverse -->
-        <li><a href="#">Original <span class="sr-only">(current)</span></a></li>
+        <li><a href="#" class="menu-item">Original <span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Previous Days <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">Previous Days <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Monday</a></li>
             <li><a href="#">Tuesday</a></li>
@@ -121,7 +127,7 @@
           </ul>
         </li>
 
-        <li class="dropdown">
+        <li class="dropdown menu-item">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Countries <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Afghanistan</a></li>
@@ -132,7 +138,7 @@
           </ul>
         </li> <!-- end of countries dropdown -->
 
-        <li class="dropdown">
+        <li class="dropdown menu-item">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More Resources <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Prison Scandal</a></li>
@@ -155,34 +161,22 @@
   </div><!-- /.container-fluid -->
 </nav><!-- end of second nav -->
 
+<div class="row">
 <div class="col-md-5"> <!-- news -->
-  <h3>News</h3>
-  <ul>
-    <li><a href="#"><h4>Canada Military Adviser Dies by Iraq Friendly Fire</h4></a></li>
+  <h3 class="headers">News</h3>
+  <ul id="newsitems">
+    <li class="major"><a href="#">Canada Military Adviser Dies by Iraq Friendly Fire</a></li>
     <li><a href="#">Refugee Crisis Looms as Iraqi Troops Reach Outskirts of Tikrit</a></li>
-    <li><a href="#"><h4>Iran Gains as Shi'ites Seize Sunni Territory in Iraq</h4></a></li>
+    <li class="major"><a href="#">Iran Gains as Shi'ites Seize Sunni Territory in Iraq</a></li>
     <li><a href="#">Refugee Crisis Looms as Iraqi Troops Reach Outskirts of Tikrit</a></li>
     <li><a href="#">Iraq Officials Cast Doubt on Early Offensive to Retake Mosul</a></li>
     <li><a href="#">Why the US Is Sitting Out Iraq's Most Important Assault on ISIS</a></li>
   </ul>
 </div> <!-- end of news div -->
 
-<div class="col-md-4">
-  <h3>Blog</h3>
-  <ul id="blog">
-    <li><a href="#">When Bibi Came to Town</a></li>
-    <li><a href="#">Netanyahu’s Crime Isn’t Playing Politics – It’s Warmongering</a></li>
-    <li><a href="#">In Ukraine War, Both 'Russian' and 'Troops' Need to Be in Quotes</a></li>
-    <li><a href="#">General Petraeus: Too Big to Jail</a></li>
-  </ul>
-
-  <img src="amazon.png" alt="Amazon button">
-
-</div> <!-- end of blog -->
-
 <div class="col-sm-3">
-  <h3>Viewpoints</h3>
-  <ul id="viewpoints">
+  <h3 class="headers">Viewpoints</h3>
+  <ul id="vpitems">
     <li><a href="#">An Open Letter to Petro Poroshenko</a></li>
       <li class="vpauth"><small> by Michael Pesek</small></li>
     <li><a href="#">Netanyahu Still Swaying Congress</a></li>
@@ -194,18 +188,33 @@
     <li><a href="#">Netanyahu's Impossible Dream</a></li>
       <li class="vpauth"><small> by Steve Chapman</small></li>
     <li><a href="#">Let's All Pity Netanyahu and the GOP</a></li>
-      <li><small> by Patrick L. Smith</small></li>
+      <li class="vpauth"><small> by Patrick L. Smith</small></li>
     <li><a href="#">Demonizing Russia Paves the Way for War</a></li> 
-      <li class="vpauth"><small> by Seumas Milne</small></li> 
+      <li class="vpauth"><small> by Seamus Milne</small></li> 
   </ul>   
 </div> <!-- end of viewpoints -->
 
+<div class="col-md-4">
+
+  <div>
+    <img src="images/softlayer.jpg" id="adimage" alt="advertisement">
+  </div>
+
+  <h3 class="headers">Blog</h3>
+  <ul id="blogitems">
+    <li><a href="#">When Bibi Came to Town</a></li>
+    <li><a href="#">Netanyahu’s Crime Isn’t Playing Politics – It’s Warmongering</a></li>
+    <li><a href="#">In Ukraine War, Both 'Russian' and 'Troops' Need to Be in Quotes</a></li>
+    <li><a href="#">General Petraeus: Too Big to Jail</a></li>
+  </ul>
+</div> <!-- end of blog -->
+
+</div> <!-- end of row -->
+
+
 <!-- Bottom sections-->
 
-<div class="col-sm-3">
-  <img src="border-region.jpg" alt="current event photo">
-</div>
-
+<div class="row" id="top-regions">
 <div class="col-sm-3">
   <h4>Israel/Palestine</h4>
   <ul>
@@ -229,10 +238,6 @@
 </div>
 
 <div class="col-sm-3">
-<img src="softlayer.jpg" id="adimage" alt="advertisement">
-</div>
-
-<div class="col-sm-3">
   <h4>Frontline</h4>
   <ul>
     <li><a href="#">CIA Whistleblower John Kiriakou on Torture Coverup, Silencing Dissent</a></li>
@@ -243,6 +248,11 @@
   </ul>
 </div>
 
+<div class="col-sm-3"><img id="vertical-ad" src="images/vertical-ad.png"></div>
+
+</div> <!-- end of row -->
+
+<div class="row"> <!-- start of second row of bottom sections -->
 <div class="col-sm-3">
   <h4>ISIS Recruitment</h4>
   <ul>
@@ -265,6 +275,17 @@
   </ul>
 </div>
 
+<div class="col-sm-3">
+  <h4>ISIS Recruitment</h4>
+  <ul>
+    <li><a href="#">Tens of Thousands Attend Anti-Netanyahu Rally in Tel Aviv</a></li>
+    <li><a href="#">Ex-Mossad Chief Pans Netanyahu's 'Bullshit' Speech to Congress</a></li>
+    <li><a href="#">Abbas Won't Cut Security Ties With Israel Before Elections</a></li>
+    <li><a href="#">Benjamin Netanyahu Aide Denies PM Okayed Return to '67 Lines in Talks With Palestinians</a></li>
+    <li><a href="#">Documents Shine Light on Shadowy New Zealand Surveillance Base</a></li>
+  </ul>
+</div>
+</div> <!-- end of second row -->
 </div> <!-- end of wrapper -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

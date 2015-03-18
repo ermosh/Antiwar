@@ -7,12 +7,7 @@
 }
 
 #donate-button {
-	background-color: #FFF04E;
-}
-
-body {
-	font: 'Open Sans', sans-serif;
-	border-top: solid 5px #990000;
+	background-color: #990000;
 }
 
 #wrapper {
@@ -31,14 +26,84 @@ body {
 #bs-example-navbar-collapse-1 {
 	background-color: #336699;
 	margin-top: 10px;
+	margin-bottom: 0px;
 }
-	#bs-example-navbar-collapse-1 li a {
-		color: black;
+	#bs-example-navbar-collapse-1 ul li a {
+		color: white;
 	}
-/*#viewpoints, #blog {
-	list-style-type: none;
-}*/
+		#bs-example-navbar-collapse-1 ul li a:hover {
+		background-color: #336699;
+	}
+
+#pleasework {
+	background-color: #336699;
+}
+
+	#pleasework li a {
+		color: white;
+	}
 
 .vpauth{
 	list-style-type: none;
 }
+
+ .menu-item {
+	font-family: 'Coustard', serif;
+ }
+ 
+ .zest:hover {
+ 	color: black;
+ }
+
+ #subnav {
+ 	margin-left: 100px;
+ 	margin-top: 0px;
+ 	width: 951px;
+ }
+
+ .inverse-dropdown {
+ 	color: black;
+ }
+
+ .major {
+ 	list-style-type: none;
+ 	font-size: 1.3em;
+ 	font-weight: bolder;
+ }
+
+ #newsitems, #blogitems, #vpitems {
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ .headers {
+ 	font-family: 'Coustard', serif;
+ }
+
+ .nav-justified:hover {
+ 	background-color: #336699;
+ }
+
+ #long-ad {
+ 	margin-left: 288px;
+ }
+
+ #vertical-ad {
+ 	display: inline-block;
+ }
+
+ #top-regions {
+ 	margin-top: 20px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+

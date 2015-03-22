@@ -11,8 +11,8 @@
 }
 
 #wrapper {
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 150px;
+	margin-right: 150px;
 }
 
 #brand {
@@ -35,11 +35,11 @@
 		background-color: #336699;
 	}
 
-#pleasework {
+#nav-color {
 	background-color: #336699;
 }
 
-	#pleasework li a {
+	#nav-color li a {
 		color: white;
 	}
 
@@ -50,6 +50,10 @@
  .menu-item {
 	font-family: 'Coustard', serif;
  }
+
+ 	.menu-item:hover {
+ 		background-color: #336699;
+ 	}
  
  .zest:hover {
  	color: black;
@@ -94,7 +98,27 @@
 
  #top-regions {
  	margin-top: 20px;
+ 	/*height: 600px;*/
  }
+
+ #authors {
+ 	background-color: black;
+ }
+
+.visible {
+ 	background-color: black;
+ }
+
+ .scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+#amazon-button {
+	list-style-type: none;
+	margin-top: 10px;
+}
 
 
 

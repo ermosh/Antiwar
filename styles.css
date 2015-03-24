@@ -11,8 +11,8 @@
 }
 
 #wrapper {
-	margin-left: 150px;
-	margin-right: 150px;
+	margin-left: 165px;
+	margin-right: 165px;
 }
 
 #brand {
@@ -60,7 +60,6 @@
  }
 
  #subnav {
- 	margin-left: 100px;
  	margin-top: 0px;
  	width: 951px;
  }
@@ -98,7 +97,6 @@
 
  #top-regions {
  	margin-top: 20px;
- 	/*height: 600px;*/
  }
 
  #authors {

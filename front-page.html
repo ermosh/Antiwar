@@ -71,14 +71,36 @@
       </button>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+<!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="navigation">
       <ul class="nav nav-pills nav-justified"> <!-- navbar-inverse -->
-        <li><a href="#" class="menu-item">Who We Are <span class="sr-only">(current)</span></a></li>
+
+        <li role="presentation" class="dropdown">
+          <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">About Us <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Who We Are</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Shop Antiwar.com</a></li>
+              <li><a href="#">Reprint Policy</a></li>
+              <li><a href="#">Submission Guidelines</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </li> <!-- end of About Us dropdown -->
+
+        <li role="presentation" class="dropdown">
+          <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">News<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Latest</a></li>
+              <li><a href="#">Original</a></li>
+              <li><a href="#">Viewpoints</a></li>
+              <li><a href="#">Regional News</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+        </li> <!-- end of News dropdown -->
 
         <li role="presentation" class="dropdown">
           <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">Authors <span class="caret"></span></a>
-            <ul class="dropdown-menu visible scrollable-menu" role="menu"> <!-- inverse-dropdown -->
+            <ul class="dropdown-menu visible scrollable-menu" role="menu">
               <li><a href="#">Justin Raimondo</a></li>
               <li><a href="#">Pat Buchanan</a></li>
               <li><a href="#">Lucy Steigerwald</a></li>
@@ -148,243 +170,27 @@
               <li><a href="#">Waging Nonviolence</a></li>
               <li><a href="#">John Caruso</a></li>
             </ul>
-        </li>
+        </li> <!-- end of Authors dropdown -->
 
-        <li><a href="#" class="menu-item">Blog</a></li>
-        <li><a href="#" class="menu-item">Shop</a></li>
-        <li><a href="#" class="menu-item">Contact</a></li>
-        <li><a href="#" class="menu-item">Newsletter</a></li>
-        <li id="donate-button" class="menu-item"><a href="antiwar.com/donate">Donate</a>
-      </ul>
-      
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav> <!-- end of first nav -->
-
-<!-- Second nav -->
-<nav class="navbar" id="subnav">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="nav-color">
-
-      <ul class="nav nav-pills nav-justified"> <!-- navbar-inverse -->
-        <!-- Original -->
-        <li><a href="#" class="menu-item">Original <span class="sr-only">(current)</span></a></li>
-        <!-- Previous Days  -->
-        <li class="dropdown" role="presentation">
-          <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">Previous Days <span class="caret"></span></a>
-          <ul class="dropdown-menu visible" role="menu">
-            <li><a href="#">Monday</a></li>
-            <li><a href="#">Tuesday</a></li>
-            <li><a href="#">Wednesday</a></li>
-            <li><a href="#">Thursday</a></li>
-            <li><a href="#">Friday</a></li>
-            <li><a href="#">Past Days</a></li>
-          </ul>
-        </li>
-        <!-- Countries -->
         <li role="presentation" class="dropdown">
-          <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">Countries <span class="caret"></span></a>
-          <ul class="dropdown-menu visible scrollable-menu" role="menu">
-            <li><a href="#">Afghanistan</a></li>
-            <li><a href="#">Iraq</a></li>
-            <li><a href="#">Syria</a></li>
-            <li><a href="#">Egypt</a></li>
-            <li><a href="#">Libya</a></li>
-            <li role="presentation" class="divider"></li>
-            <li><a href="#">Africa</a></li>
-            <li><a href="#">Algeria</a></li>
-            <li><a href="#">Angola</a></li>
-            <li><a href="#">Botswana</a></li>
-            <li><a href="#">Burkina Faso</a></li>
-            <li><a href="#">Burundi</a></li>
-            <li><a href="#">Cameroon</a></li>
-            <li><a href="#">Central African Republic</a></li>
-            <li><a href="#">Chad</a></li>
-            <li><a href="#">Congo</a></li>
-            <li><a href="#">Djibouti</a></li>
-            <li><a href="#">Equatorial Guinea</a></li>
-            <li><a href="#">Eritrea</a></li>
-            <li><a href="#">Ethiopia</a></li>
-            <li><a href="#">Gabon</a></li>
-            <li><a href="#">Gambia</a></li>
-            <li><a href="#">Ghana</a></li>
-            <li><a href="#">Guinea</a></li>
-            <li><a href="#">Kenya</a></li>
-            <li><a href="#">Lesotho</a></li>
-            <li><a href="#">Liberia</a></li>
-            <li><a href="#">Madagascar</a></li>
-            <li><a href="#">Malawi</a></li>
-            <li><a href="#">Mali</a></li>
-            <li><a href="#">Mauritania</a></li>
-            <li><a href="#">Mauritius</a></li>
-            <li><a href="#">Morocco</a></li>
-            <li><a href="#">Mozambique  </a></li>
-            <li><a href="#">Namibia</a></li>
-            <li><a href="#">Niger   </a></li>
-            <li><a href="#">Nigeria</a></li>
-            <li><a href="#">Rwanda  </a></li>
-            <li><a href="#">Senegal</a></li>
-            <li><a href="#">Seychelles  </a></li>
-            <li><a href="#">Sierra Leone</a></li>
-            <li><a href="#">Somalia   </a></li>
-            <li><a href="#">South Africa</a></li>
-            <li><a href="#">Sudan </a></li>
-            <li><a href="#">Swaziland</a></li>
-            <li><a href="#">Tanzania</a></li>
-            <li><a href="#">Togo</a></li>
-            <li><a href="#">Uganda  </a></li>
-            <li><a href="#">Zambia</a></li>
-            <li><a href="#">Zimbabwe</a></li>
+          <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">Resources<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="#">US Casualties</a></li>
+              <li><a href="#">Iraq Casualties</a></li>
+              <li><a href="#">Abu Ghraib</a></li>
+              <li><a href="#">Photos of the Fallen</a></li>
+              <li><a href="#">Quotes</a></li>
+            </ul>
+        </li> <!-- end of Resources dropdown -->
 
-            <li><a href="#">Latin America</a></li>
-            <li><a href="#">Argentina</a></li>
-            <li><a href="#">Bolivia</a></li>
-            <li><a href="#">Brazil</a></li>
-            <li><a href="#">Chile</a></li>
-            <li><a href="#">Colombia</a></li>
-            <li><a href="#">Costa Rica</a></li>
-            <li><a href="#">Cuba</a></li>
-            <li><a href="#">Dominican Republic</a></li>
-            <li><a href="#">Ecuador</a></li>
-            <li><a href="#">El Salvador</a></li>
-            <li><a href="#">French Guiana</a></li>
-            <li><a href="#">Grenada</a></li>
-            <li><a href="#">Guatemala</a></li>
-            <li><a href="#">Guyana</a></li>
-            <li><a href="#">Haiti</a></li>
-            <li><a href="#">Honduras</a></li>
-            <li><a href="#">Mexico</a></li>
-            <li><a href="#">Nicaragua</a></li>
-            <li><a href="#">Panama</a></li>
-            <li><a href="#">Paraguay</a></li>
-            <li><a href="#">Peru</a></li>
-            <li><a href="#">Uruguay</a></li>
-            <li><a href="#">Venezuela</a></li>
+        <li id="donate-button" class="menu-item"><a href="antiwar.com/donate">Donate</a>
 
-            <li><a href="#">Europe</a></li>
-            <li><a href="#">Austria</a></li>
-            <li><a href="#">Albania</a></li>
-            <li><a href="#">Azerbaijan</a></li>
-            <li><a href="#">  </a></li>
-            <li><a href="#">Armenia</a></li>
-            <li><a href="#">Belgium</a></li>
-            <li><a href="#">Bulgaria</a></li>
-            <li><a href="#">Bosnia-Herzegovina</a></li>
-            <li><a href="#">Czech Republic</a></li>
-            <li><a href="#">Kosovo</a></li>
-            <li><a href="#">Italy</a></li>
-            <li><a href="#">Switzerland</a></li>
-            <li><a href="#">Netherlands</a></li>
-            <li><a href="#">Sweden</a></li>
-            <li><a href="#">Norway</a></li>
-            <li><a href="#">Denmark</a></li>
-            <li><a href="#">Ireland</a></li>
-            <li><a href="#">Poland</a></li>
-            <li><a href="#">Hungary</a></li>
-            <li><a href="#">Finland</a></li>
-            <li><a href="#">Romania</a></li>
-            <li><a href="#">Russia</a></li>
-            <li><a href="#">  </a></li>
-            <li><a href="#">Georgia</a></li>
-            <li><a href="#">Serbia</a></li>
-            <li><a href="#">United Kingdom</a></li>
-            <li><a href="#">Solvakia</a></li>
-            <li><a href="#">Croatia</a></li>
-            <li><a href="#">France</a></li>
-            <li><a href="#">Greece</a></li>
-            <li><a href="#">Portugal</a></li>
-            <li><a href="#">Turkey</a></li>
-            <li><a href="#">Germany</a></li>
-            <li><a href="#">Spain<li><a href="#"</a></li>
-
-            <li><a href="#">Middle East</a></li>
-            <li><a href="#">Afghanistan</a></li>
-            <li><a href="#">Algeria</a></li>
-            <li><a href="#">Egpyt</a></li>
-            <li><a href="#">Iran</a></li>
-            <li><a href="#">Iraq</a></li>
-            <li><a href="#">Israel/Palestine</a></li>
-            <li><a href="#">Jordan</a></li>
-            <li><a href="#">Kuwait</a></li>
-            <li><a href="#">Lebanon</a></li>
-            <li><a href="#">Libya</a></li>
-            <li><a href="#">Morocco</a></li>
-            <li><a href="#">Oman</a></li>
-            <li><a href="#">Qatar</a></li>
-            <li><a href="#">Saudi Arabia</a></li>
-            <li><a href="#">Syria</a></li>
-            <li><a href="#">Turkemenstan</a></li>
-            <li><a href="#">Uzbekistan</a></li>
-            <li><a href="#">Yemen</a></li>
-
-            <li><a href="#">North America</a></li>
-            <li><a href="#">United States</a></li>
-            <li><a href="#">Canada</a></li>
-
-            <li><a href="#">Norteast Asia</a></li>
-            <li><a href="#">China</a></li>
-            <li><a href="#">Japan</a></li>
-            <li><a href="#">North /South Korea</a></li>
-            <li><a href="#">Taiwan</a></li>
-            <li><a href="#">Tibet</a></li>
-
-            <li><a href="#">South Asia </a></li>
-            <li><a href="#">India</a></li>
-            <li><a href="#">Nepal</a></li>
-            <li><a href="#">Pakistan</a></li>
-            <li><a href="#">Sri Lanka</a></li>
-
-            <li><a href="#">Southeast Asia</a></li>
-            <li><a href="#">Australia</a></li>
-            <li><a href="#">Cambodia</a></li>
-            <li><a href="#">Indonesia</a></li>
-            <li><a href="#">Thailand</a></li>
-            <li><a href="#">Malaysia</a></li>
-            <li><a href="#">Singapore</a></li>
-            <li><a href="#">New Zealand   </a></li>
-            <li><a href="#">Philippines</a></li>
-            <li><a href="#">Vietnam</a></li>
-          </ul>
-        </li> <!-- end of countries dropdown -->
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">More Resources <span class="caret"></span></a>
-          <ul class="dropdown-menu visible" role="menu">
-            <li><a href="#">Prison Scandal</a></li>
-            <li><a href="#">Photos of the Fallen</a></li>
-            <li><a href="#">Quotes</a></li>
-            <li><a href="#">Reprint Policy?</a></li>
-            <li><a href="#">Submission Guidelines?</a></li>
-          </ul>
-        </li> 
-
-        <li>
-          <form class="menu-item navbar-form form-inline" role="search">
-            <a href="#" class="menu-item">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-          </form>
-        </li>
       </ul>
-
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav><!-- end of second nav -->
+        </div> <!-- end of nav -->
 
 <div class="row">
-<div class="col-md-5"> <!-- news -->
+
+<div class="col-md-7"> <!-- news -->
   <h3 class="headers">News</h3>
   <ul id="newsitems">
     <li class="major"><a href="#">Canada Military Adviser Dies by Iraq Friendly Fire</a></li>
@@ -394,10 +200,11 @@
     <li><a href="#">Iraq Officials Cast Doubt on Early Offensive to Retake Mosul</a></li>
     <li><a href="#">Why the US Is Sitting Out Iraq's Most Important Assault on ISIS</a></li>
   </ul>
-  <li id="amazon-button"><img src="images/amazon.png"></img></li>
+
+  <div><a href="#"><img src="images/Camp-Schwab-airfield.jpg"></a></div>
 </div> <!-- end of news div -->
 
-<div class="col-md-3">
+<div class="col-md-5">
   <h3 class="headers">Viewpoints</h3>
   <ul id="vpitems">
     <li><a href="#">An Open Letter to Petro Poroshenko</a></li>
@@ -414,14 +221,9 @@
       <li class="vpauth"><small> by Patrick L. Smith</small></li>
     <li><a href="#">Demonizing Russia Paves the Way for War</a></li> 
       <li class="vpauth"><small> by Seamus Milne</small></li> 
-  </ul>   
-</div> <!-- end of viewpoints -->
 
-<div class="col-md-4">
-
-  <div>
-    <img src="images/softlayer.jpg" id="adimage" alt="advertisement">
-  </div>
+    <li id="amazon-button"><a href="http://www.amazon.com/"><img src="images/amazon.png"></img></a></li>
+  </ul> 
 
   <h3 class="headers">Blog</h3>
   <ul id="blogitems">
@@ -429,8 +231,16 @@
     <li><a href="#">Netanyahu’s Crime Isn’t Playing Politics – It’s Warmongering</a></li>
     <li><a href="#">In Ukraine War, Both 'Russian' and 'Troops' Need to Be in Quotes</a></li>
     <li><a href="#">General Petraeus: Too Big to Jail</a></li>
-  </ul>
-</div> <!-- end of blog -->
+  </ul>  
+</div> <!-- end of viewpoints -->
+
+<!-- <div class="col-md-4"> -->
+
+  <!-- <div>
+    <img src="images/softlayer.jpg" id="adimage" alt="advertisement">
+  </div> -->
+
+<!-- </div>  --><!-- end of blog -->
 
 </div> <!-- end of row -->
 
